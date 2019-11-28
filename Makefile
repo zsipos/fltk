@@ -18,7 +18,7 @@
 
 include makeinclude
 
-DIRS = $(IMAGEDIRS) src $(CAIRODIR) fluid test documentation
+DIRS = $(IMAGEDIRS) src $(CAIRODIR) fluid documentation # test
 
 all: makeinclude fltk-config
 	for dir in $(DIRS); do\
