@@ -55,6 +55,24 @@ Fl_Font_Descriptor::~Fl_Font_Descriptor() {
 // WARNING: if you add to this table, you must redefine FL_FREE_FONT
 // in Enumerations.H & recompile!!
 static Fl_Fontdesc built_in_table[] = {
+#if 1
+{"-*-dejavu sans-medium-r-normal--*"},
+{"-*-dejavu sans-bold-r-normal--*"},
+{"-*-dejavu sans-medium-o-normal--*"},
+{"-*-dejavu sans-bold-o-normal--*"},
+{"-*-dejavu sans mono-medium-r-normal--*"},
+{"-*-dejavu sans mono-bold-r-normal--*"},
+{"-*-dejavu sans mono-medium-o-normal--*"},
+{"-*-dejavu sans mono-bold-o-normal--*"},
+{"-*-dejavu serif-medium-r-normal--*"},
+{"-*-dejavu serif-bold-r-normal--*"},
+{"-*-dejavu serif-medium-i-normal--*"},
+{"-*-dejavu serif-bold-i-normal--*"},
+{"-*-symbol-*"},
+{"-*-*typewriter-medium-r-normal-sans-*"},
+{"-*-*typewriter-bold-r-normal-sans-*"},
+{"-*-*zapf dingbats-*"}
+#else
 {"-*-helvetica-medium-r-normal--*"},
 {"-*-helvetica-bold-r-normal--*"},
 {"-*-helvetica-medium-o-normal--*"},
@@ -71,6 +89,7 @@ static Fl_Fontdesc built_in_table[] = {
 {"-*-lucidatypewriter-medium-r-normal-sans-*"},
 {"-*-lucidatypewriter-bold-r-normal-sans-*"},
 {"-*-*zapf dingbats-*"}
+#endif
 };
 
 Fl_Fontdesc* fl_fonts = built_in_table;
