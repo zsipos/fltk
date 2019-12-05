@@ -1,6 +1,10 @@
 # ignore file for git - generated from subversion with:
 # git svn show-ignore
 
+.project
+.cproject
+.settings
+
 *.o
 *.exe
 
